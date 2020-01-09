@@ -1,4 +1,3 @@
-// Example program
 #include <iostream>
 #include <string>
 
@@ -30,4 +29,6 @@ int main()
         // Decrement
         bilangan--;
     } while(bilangan > 0);
+
+    return 0;
 }
