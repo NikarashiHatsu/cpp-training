@@ -1,3 +1,4 @@
+ 
 #include <iostream>
 #include <string>
 
@@ -15,10 +16,16 @@ int main()
     cout << "Masukkan angka pada urutan ke-3: "; cin >> angka[3];
     cout << "Masukkan angka pada urutan ke-4: "; cin >> angka[4];
     cout << endl;
-    
-    // Inputan cari data
+
+    // Inputan cari data    
     cout << "Masukkan data yang ingin dicari: "; cin >> data;
-    cout << "Data " << angka[data] << " terletak pada array urutan ke-" << data;
+    
+    // Result cari data
+    if(data > 4) {
+        cout << "Inputan data yang Anda cari tidak valid" << endl;
+    } else {
+        cout << "Data " << angka[data] << " terletak pada array urutan ke-" << data;
+    }
     
     // Return 
     return 0;
